@@ -1,0 +1,452 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+
+
+
+
+
+
+
+
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <!-- Customize your theme here. -->
+       <!-- <item name="colorPrimary">@color/text_orange</item>
+        <item name="colorPrimaryDark">@color/text_orange</item>
+        <item name="colorAccent">@color/text_orange</item>-->
+        <!-- Customize your theme here. -->
+        <!-- Action Bar Theme -->
+        <!-- Custom Style Attribute-->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- Dialog样式  （阴影） -->
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+    </style>
+
+    <style name="http_dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <!-- 我的页面的网格面板样式 -->
+    <!--
+        android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"
+                  android:orientation="vertical" android:gravity="center"
+
+
+
+
+
+
+
+
+
+    -->
+    <!-- 标签文字样式 -->
+    <style name="text_tag">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_gray_general</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+    <!-- 普通灰色文字样式 -->
+    <style name="text_gray_general">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_gray_general</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 普通橘色文字样式 -->
+    <style name="text_orange_general">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_orange</item>
+        <item name="android:drawablePadding">2dp</item>
+       <!--  <item name="android:textSize">18sp</item> -->
+    </style>
+    <!-- 企业介绍文字样式 -->
+    <style name="enterprise_switch_text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/act_detail_bottom_bg</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="alert_dialog" parent="android:Theme.Dialog">
+        <item name="colorPrimary">@color/text_orange</item>
+
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/float_transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <!-- 企业印象、评论用户名样式 -->
+    <style name="enterprise_impress_name_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_orange</item>
+    </style>
+    <!-- 企业印象、评论赞的数量样式 -->
+    <style name="enterprise_impress_zan_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gray_hs</item>
+    </style>
+    <!-- 企业印象、评论时间样式 -->
+    <style name="enterprise_impress_time_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/enterprise_impress_item_time</item>
+    </style>
+    <!-- 企业印象、评论内容样式 -->
+    <style name="enterprise_impress_content_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <!-- 企业印象、评论内容的回复样式 -->
+    <style name="enterprise_impress_reply_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/gray_hs</item>
+    </style>
+
+    <!-- 职位详情的flowlayout里面的文字 -->
+    <style name="jobdetail_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_gray_general</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+    <!-- 职位详情的flowlayout里面的文字 -->
+    <style name="actdetail_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_gray_general</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+    </style>
+    <!-- 职位详情的“我们希望你是”等文字 -->
+    <style name="jobdetail_title_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/act_detail_bottom_bg</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+    </style>
+    <!-- 企业介绍滑动评论文字 -->
+    <style name="text_enterprise_slide_comment">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_gray_general</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+    </style>
+    <!-- 企业介绍背景文字样式 -->
+    <style name="text_enterprise_background">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_gray_general</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="complext_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray_hs</item>
+    </style>
+
+
+    <style name="act_detail_rel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+    <!-- 所有title中间的文字 -->
+    <style name="title_middle_text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:singleLine">true</item>
+
+    </style>
+
+
+    <style name="layout_fill">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="layout_wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="layout_fill_wrap">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="layout_wrap_fill">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <!-- 设置中item的文字 -->
+    <style name="setting_item_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="message_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/text_gray_general</item>
+    </style>
+    <!-- 我的简历中的基本信息一类的文字样式 -->
+    <style name="myresume_base_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+    <!-- 我的简历中的基本信息标题的文字样式 -->
+    <style name="myresume_base_title_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_orange</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+    <!-- 我的简历中的求职意向的标签样式 -->
+    <style name="myresume_jobwant_title_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_gray_light</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+    <!-- 我的简历中每个模块的RelativeLayout样式 -->
+    <style name="myresume_Rel_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+    <!-- 我的简历中的工作经验中item的title文字样式 -->
+    <style name="myresume_job_experience_title_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_orange</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 我的简历中的工作经验flowlayout一类的文字样式 -->
+    <style name="myresume_job_experience_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+    </style>
+
+    <style name="setting_text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/setting_text</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="setting_text_other">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/setting_text</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+
+    <style name="aboutus">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/setting_text</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="aboutus_ll">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="all_back_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/back</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingRight">30dp</item>
+    </style>
+    <style name="information_title_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/text_top_status_color</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="information_title_text_info">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/my_favor_item</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">15dp</item>
+    </style>
+    <style name="divider_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">13dp</item>
+        <item name="android:layout_marginRight">13dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/gray_bg</item>
+    </style>
+    <style name="information_title_text_info_light">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/text_gray_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">15dp</item>
+    </style>
+    <style name="information_setting">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/my_favor_item</item>
+    </style>
+    <style name="micro_resume_title_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_top_status_color</item>
+    </style>
+    <style name="micro_resume_text_info">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/my_favor_item</item>
+    </style>
+    <style name="micro_resume_text_info_light">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/text_gray_white</item>
+    </style>
+    <style name="micro_resume_base_text_info">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/my_favor_item</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+    <style name="micro_resume_base_text_light">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">right</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/text_gray_white</item>
+    </style>
+</resources>

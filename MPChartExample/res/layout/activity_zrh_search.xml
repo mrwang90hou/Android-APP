@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="气体" android:layout_marginRight="16dp"/>
+        <CheckBox android:id="@+id/cbCH4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CH4" android:checked="true"/>
+        <CheckBox android:id="@+id/cbNH3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NH3" android:checked="true"/>
+        <CheckBox android:id="@+id/cbH2S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H2S"
+            android:checked="true"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="传感器" android:layout_marginRight="16dp"/>
+        <CheckBox android:id="@+id/cbSensor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1号" android:checked="true"/>
+        <CheckBox android:id="@+id/cbSensor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2号" android:checked="true"/>
+        <CheckBox android:id="@+id/cbSensor3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3号"
+            android:checked="true"/>
+        <CheckBox android:id="@+id/cbSensor4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4号" android:checked="true"/>
+        <CheckBox android:id="@+id/cbSensor5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5号"
+            android:checked="true"/>
+
+    </LinearLayout>
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="传感器" android:layout_marginRight="8dp"
+            android:visibility="gone"/>
+        <TextView android:id="@+id/tvSensor"
+            android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:padding="8dp"
+            android:text="1号" android:visibility="gone"
+            android:gravity="center" android:background="@drawable/input_background"
+            android:layout_marginRight="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日期" android:layout_marginRight="8dp"
+            />
+        <TextView android:id="@+id/tvDate"
+            android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:padding="8dp"
+            android:text="2016年4月30日"
+            android:gravity="center" android:background="@drawable/input_background"
+            />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/llDropDown"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal"
+        android:visibility="visible">
+       <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="传感器" android:layout_marginRight="8dp"
+            android:visibility="gone"/>
+        <ListView android:id="@+id/lvSensor"
+            android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日期" android:layout_marginRight="8dp"
+            android:visibility="invisible"/>
+        <ListView android:id="@+id/lvDate"
+            android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

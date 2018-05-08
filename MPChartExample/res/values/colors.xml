@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 橘色字体颜色 F39800-->
+    <color name="text_orange">#F39800</color>
+    <!-- 橘色字体颜色 -->
+    <color name="text_orange_half">#CCF39800</color>
+    <!-- 橘白字体颜色 -->
+    <color name="text_white_orange">#F3CD8F</color>
+    <!-- 淡灰色字体颜色 -->
+    <color name="text_gray_light">#d2d3d3</color>
+    <!-- 普通淡黑色字体颜色 -->
+    <color name="text_gray_general">#898989</color>
+
+    <!-- 普通淡黑色字体颜色 -->
+    <color name="pop_btn_pressed">#C9C7CA</color>
+
+    <!-- 普通淡黑色字体颜色 -->
+    <color name="white_gray_pressed">#EEEFEF</color>
+
+    <!-- 橘红色字体颜色 -->
+    <color name="text_orange_red">#ec6c00</color>
+    <!-- 原灰色背景颜色 e8e8e8 -->
+    <!-- 灰色背景颜色 -->
+    <color name="gray_bg">#ececec</color>
+    <color name="half_gray_bg">#7fcccccc</color>
+    <!-- 灰色背景颜色 -->
+    <color name="gray_bg_light">#FAFAFA</color>
+    <!-- 灰白字体颜色 -->
+    <color name="text_gray_white">#b4b5b5</color>
+
+    <!-- 职业列表grid 背景颜色 -->
+    <color name="career_grid_bg">#f8c266</color>
+
+    <!-- 职业列表选中颜色 -->
+    <color name="career_pop_bg">#f39800</color>
+    <color name="dialog_text_color">#FFFFFF</color>
+    <color name="main_title_color">#87654321</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="eight_half_black">#7f000000</color>
+    <color name="blue">#104E8B</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- 半透明 -->
+    <color name="half_transparent">#7f888888</color>
+    <color name="gray">#4A4A4A</color>
+    <color name="main_orange">#f39800</color>
+    <color name="gray_hs">#6D6D6D</color>
+    <!-- sweet_alert_dialog -->
+    <color name="float_transparent">#66000000</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="blue_btn_bg_color">#AEDEF4</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F39800</color>
+    <color name="all_job_num_color">#E3240F</color>
+    <color name="evaluate_bg">#9B9B9B</color>
+    <color name="act_detail_bottom_bg">#717071</color>
+    <color name="hint_color">#d9dada</color>
+ <!-- hint -->
+    <color name="holo_blue">#FF33E5B5</color>
+    <color name="text_orange_pressed">#D39800</color>
+    <color name="setting_text">#6D6D6D</color>
+    <color name="search_text">#FCD58C</color>
+    <color name="enterprise_impress_item_time">#B4B5B5</color>
+    <color name="job_item_expand_un">#E8E8E8</color>
+    <color name="job_item_expand">#F3F3F3</color>
+    <color name="job_item_condition_half_bg">#af717071</color>
+    <color name="mine_left_unpress">#F39700</color>
+    <color name="mine_right_unprees">#F99E0B</color>
+    <color name="mine_preesed">#D48401</color>
+    <color name="myresume_title_bgcolor">#8B8B8B</color>
+    <color name="background_picker">#ff579fff</color>
+    <!-- PickerUI lines colors -->
+    <color name="lines_panel_pickerui">#aaaaaa</color>
+
+    <!-- PickerUI panel colors -->
+    <color name="background_panel_pickerui">#fffafafa</color>
+
+    <!-- PickerUI items colors -->
+    <color name="text_center_pickerui">#ff000000</color>
+    <color name="text_no_center_pickerui">#aaa</color>
+    <drawable name="list_item_selected">#aaaaaa</drawable>
+
+    <!-- PickerUI shadow colors -->
+    <color name="grey1">#00CCCCCC</color>
+    <color name="grey2">#10CCCCCC</color>
+    <color name="grey3">#20CCCCCC</color>
+    <color name="grey4">#30CCCCCC</color>
+    <color name="grey5">#50747474</color>
+    <color name="list_item_title">#212121</color>
+    <color name="list_item_distance">#9B9B9B</color>
+    <color name="enterprise_jobnum">#88888a</color>
+    <color name="my_favor_item">#888889</color>
+    <color name="job_bidding_innerlist">#767678</color>
+    <color name="job_bidding_innerlist_time">#b7b4b9</color>
+    <color name="textcolor">#F39800</color>
+    <color name="text_top_status_color">#333333</color>
+    <color name="text_top_status_color_alpha">#7f333333</color>
+    <color name="text_top_status_color_new">#222D33</color>
+    <color name="new_login_register_textcolor">#F39700</color>
+
+    <color name="search_bg">#727171</color>
+    <color name="province_line_border">#D0D0D0</color>
+    <color name="divider">#e0e0e0</color>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView android:id="@+id/tvCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_orange_dark"
+        android:text="开始监测" android:textColor="@android:color/white"
+        android:padding="16dp" android:gravity="center"
+        android:layout_margin="48dp"/>
+    <TextView android:id="@+id/tvSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_orange_dark"
+        android:text="实时查询" android:textColor="@android:color/white"
+        android:padding="16dp" android:gravity="center"
+        android:layout_margin="48dp"/>
+    <TextView android:id="@+id/tvLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_orange_dark"
+        android:text="退出登录" android:textColor="@android:color/white"
+        android:padding="16dp" android:gravity="center"
+        android:layout_margin="48dp"/>
+
+</LinearLayout>

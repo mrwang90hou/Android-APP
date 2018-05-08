@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CH4预警值：" android:layout_marginRight="16dp"/>
+
+        <EditText android:id="@+id/etUpLimitCH4"
+            android:layout_width="match_parent" android:minWidth="48dp"
+            android:layout_height="wrap_content"
+            android:inputType="number" android:padding="8dp"
+            android:background="@drawable/input_background"
+            android:text="80"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NH3预警值：" android:layout_marginRight="16dp"/>
+
+        <EditText android:id="@+id/etUpLimitNH3"
+            android:layout_width="match_parent" android:minWidth="48dp"
+            android:layout_height="wrap_content"
+            android:inputType="number" android:padding="8dp"
+            android:background="@drawable/input_background"
+            android:text="70"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H2S预警值：" android:layout_marginRight="16dp"/>
+
+        <EditText android:id="@+id/etUpLimitH2S"
+            android:layout_width="match_parent" android:minWidth="48dp"
+            android:layout_height="wrap_content"
+            android:inputType="number" android:padding="8dp"
+            android:background="@drawable/input_background"
+            android:text="50"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数据保留时长(天)：" android:layout_marginRight="16dp"/>
+
+        <EditText android:id="@+id/etDays"
+            android:layout_width="match_parent" android:minWidth="48dp"
+            android:layout_height="wrap_content"
+            android:inputType="number" android:padding="8dp"
+            android:background="@drawable/input_background"
+            android:text="7"/>
+    </LinearLayout>
+
+  <!--  <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>-->
+
+    <TextView android:id="@+id/tvSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_orange_dark"
+        android:text="保存" android:textColor="@android:color/white"
+        android:padding="16dp" android:gravity="center"
+        android:layout_margin="48dp"/>
+
+</LinearLayout>
